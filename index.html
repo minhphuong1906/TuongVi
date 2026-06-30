@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Tường Vi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <div id="overlay" class="overlay">
+    <div class="card">
+      <div class="gift">🎁</div>
+      <h1>Bạn nhận được một món quà!</h1>
+      <p>Mở quà để bước vào chiếc bánh kem 3D dành riêng cho Tường Vi.</p>
+      <button id="btnStart">Mở Quà Ngay ✨</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <h1>Happy Birthday Tường Vi</h1>
+    <p>Chúc mừng tuổi 15 rực rỡ</p>
+  </header>
+
+  <main id="sceneWrap">
+    <div id="scene"></div>
+
+    <div class="hint">
+      Kéo, vuốt hoặc xoay để xem bánh kem từ mọi góc độ.
+    </div>
+
+    <div class="controls">
+      <button id="btnFireworks">Bắn pháo hoa</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+      </html>
