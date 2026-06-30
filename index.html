@@ -9,18 +9,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="overlay" class="overlay">
-    <div class="card">
-      <div class="gift">🎁</div>
+    <div class="gift-card">
+      <div class="gift-icon">🎁</div>
       <h1>Bạn nhận được một món quà!</h1>
-      <p>Mở quà để bước vào chiếc bánh kem 3D dành riêng cho Tường Vi.</p>
-      <button id="btnStart">Mở Quà Ngay ✨</button>
+      <p>Bấm nút để tiếp tục, bánh kem đang đợi Vi đoá^^</p>
+      <button id="btnStart" class="primary-btn">Mở Quà Ngay ✨</button>
     </div>
   </div>
 
@@ -37,10 +37,13 @@
     </div>
 
     <div class="controls">
-      <button id="btnFireworks">Bắn pháo hoa</button>
+      <button id="btnCandle" class="control-btn">🔥 <span id="candleState">Thổi Tắt Nến</span></button>
+      <button id="btnMusic" class="control-btn">🎵 <span id="musicState">Phát Nhạc</span></button>
+      <button id="btnOrbit" class="control-btn">🌀 <span id="orbitState">Tự Xoay Bật</span></button>
     </div>
   </main>
 
+  <audio id="bgMusic" preload="auto" loop></audio>
   <script src="script.js"></script>
 </body>
-      </html>
+</html>
